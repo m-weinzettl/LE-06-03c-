@@ -29,32 +29,32 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
-        textBox1 = new System.Windows.Forms.TextBox();
-        textBox2 = new System.Windows.Forms.TextBox();
+        TxtUserName = new System.Windows.Forms.TextBox();
+        TxtPassword = new System.Windows.Forms.TextBox();
         label1 = new System.Windows.Forms.Label();
         label2 = new System.Windows.Forms.Label();
-        button1 = new System.Windows.Forms.Button();
+        BtnLogin = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
-        // textBox1
+        // TxtUserName
         // 
-        textBox1.Location = new System.Drawing.Point(160, 35);
-        textBox1.Name = "TxtBoxUsername";
-        textBox1.Size = new System.Drawing.Size(304, 23);
-        textBox1.TabIndex = 0;
+        TxtUserName.Location = new System.Drawing.Point(160, 35);
+        TxtUserName.Name = "TxtUserName";
+        TxtUserName.Size = new System.Drawing.Size(202, 23);
+        TxtUserName.TabIndex = 0;
         // 
-        // textBox2
+        // TxtPassword
         // 
-        textBox2.Location = new System.Drawing.Point(160, 64);
-        textBox2.Name = "TxtBoxPassword";
-        textBox2.Size = new System.Drawing.Size(304, 23);
-        textBox2.TabIndex = 1;
+        TxtPassword.Location = new System.Drawing.Point(160, 64);
+        TxtPassword.Name = "TxtPassword";
+        TxtPassword.Size = new System.Drawing.Size(202, 23);
+        TxtPassword.TabIndex = 1;
         // 
         // label1
         // 
         label1.AccessibleName = "";
         label1.Location = new System.Drawing.Point(39, 35);
-        label1.Name = "LabelUsername";
+        label1.Name = "label1";
         label1.Size = new System.Drawing.Size(96, 22);
         label1.TabIndex = 2;
         label1.Text = "Benutzer";
@@ -62,40 +62,41 @@ partial class Form1
         // label2
         // 
         label2.Location = new System.Drawing.Point(39, 64);
-        label2.Name = "LabelPassword";
+        label2.Name = "label2";
         label2.Size = new System.Drawing.Size(96, 22);
         label2.TabIndex = 3;
         label2.Text = "Passwort";
         // 
-        // button1
+        // BtnLogin
         // 
-        button1.Location = new System.Drawing.Point(364, 97);
-        button1.Name = "BtnLogin";
-        button1.Size = new System.Drawing.Size(99, 25);
-        button1.TabIndex = 4;
-        button1.Text = "Login";
-        button1.UseVisualStyleBackColor = true;
+        BtnLogin.Location = new System.Drawing.Point(263, 93);
+        BtnLogin.Name = "BtnLogin";
+        BtnLogin.Size = new System.Drawing.Size(99, 25);
+        BtnLogin.TabIndex = 4;
+        BtnLogin.Text = "Login";
+        BtnLogin.UseVisualStyleBackColor = true;
+        BtnLogin.Click += BtnLogin_Click;
         // 
         // Form1
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(497, 165);
-        Controls.Add(button1);
+        ClientSize = new System.Drawing.Size(379, 146);
+        Controls.Add(BtnLogin);
         Controls.Add(label2);
         Controls.Add(label1);
-        Controls.Add(textBox2);
-        Controls.Add(textBox1);
+        Controls.Add(TxtPassword);
+        Controls.Add(TxtUserName);
         Text = "WPF Bau GesmbH";
         ResumeLayout(false);
         PerformLayout();
     }
 
-    private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.TextBox textBox2;
+    private System.Windows.Forms.TextBox TxtUserName;
+    private System.Windows.Forms.TextBox TxtPassword;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Button BtnLogin;
 
     #endregion
 }
